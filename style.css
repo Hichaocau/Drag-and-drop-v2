@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  background: url(./img.jpeg) center/ cover no-repeat;
+  font-family: 'Lato', sans-serif;
+}
+.board {
+  margin: 150px auto;
+}
+h1{
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px 32px;
+  height: 100%;
+}
+.list-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #EFF4FB;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  border-radius: 4px;
+  width: 250px;
+  min-height: 120px;
+}
+.task {
+  background: white;
+  color: #808080;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: grab;
+}
+#todo-list p {
+  color: #000;
+}
+#todo-done p {
+  text-decoration: line-through;
+  color: #9495A5;
+}
+.dragging {
+  opacity: 0.3;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  background: #020000;
+  color: white !important;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropDrag</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6214/6214098.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="board">
+    <h1>Sortable List</h1>
+    <div class="container">
+      <div class="list" id="todo-list">
+        <h3 class="list-heading">Todo</h3>
+        <p class="task" draggable="true">Do 100 Javascript projects</p>
+        <p class="task" draggable="true">Learn Javascript</p>
+        <p class="task" draggable="true">Learn English</p>
+      </div>
+      <div class="list">
+        <h3 class="list-heading">In progress</h3>
+        <p class="task" draggable="true">Research new features</p>
+        <p class="task" draggable="true">Discuss new project with team</p>
+      </div>
+      <div class="list" id="todo-done">
+        <h3 class="list-heading">Done</h3>
+        <p class="task" draggable="true">Never stop learning because life never shop teaching..</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>
+
+<!--
+// drag // một mục được kéo
+// drop // một vật rơi vào một mục tiêu hợp lệ
+// dragover //một mục được kéo ĐANG ĐƯỢC KÉO qua một mục tiêu thả hợp lệ
+// dragenter // một mục được kéo đi vào mục tiêu thả hợp lệ
+// dragleave // một mục được kéo rời khỏi mục tiêu thả hợp lệ
+// dragstart //người dùng bắt đầu kéo một mục
+// dragend //thao tác kéo kết thúc
+-->
