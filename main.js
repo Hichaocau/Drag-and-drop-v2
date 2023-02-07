@@ -40,7 +40,6 @@ class dragDropMain {
     let closestOffset = Number.NEGATIVE_INFINITY;
     tastNotDraggings.forEach((tastNotDragging) => {
       const top  = tastNotDragging.getBoundingClientRect().top;
-      // console.log(top);
       const offset = mouseY - top;
       if (offset < 0 && offset > closestOffset) {
         closestOffset = offset;
@@ -52,4 +51,4 @@ class dragDropMain {
   }
 }
 
-const dragDropObj = new dragDropMain
+const dragDropObj = new dragDropMain;
